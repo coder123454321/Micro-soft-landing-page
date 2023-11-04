@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>microsoft</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body{
+      font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav img {
+
+      padding-left: 100px;
+      height: 60px;
+      width: 120px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .container1 li {
+      padding: 23px 20px;
+      font-size: 0.5rem;
+    }
+
+    .container1 a {
+      display: grid;
+      color: black;
+      text-decoration: none;
+    }
+
+    .container1 li a {
+      font-size: 1rem;
+    }
+
+    .container1 a:hover {
+      text-decoration: underline;
+
+    }
+
+    .right {
+      padding: 6px 30px;
+      position: absolute;
+      right: 5%;
+    }
+
+    .right a {
+      padding: 20px;
+    }
+
+    .right i {
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+
+
+    .section2 {
+      width: 100%;
+      height: 80vh;
+
+    }
+
+    .section2 img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .right1 {
+      position: absolute;
+      top: 30%;
+      right: 5%;
+
+    }
+
+    .right1 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .right1 h1 span {
+      font-size: 2.5rem;
+    }
+
+    .right1 button {
+      width: 105px;
+      color: white;
+      font-size: 1rem;
+      border-radius: 2px;
+      border: 1px solid transparent;
+      background-color: #0067b8;
+      height: 40px;
+    }
+
+
+    .section2:hover {
+      cursor: pointer;
+    }
+
+    .right1 button:hover {
+      cursor: pointer;
+      background-color: #0067b8;
+    }
+
+
+
+    /*swipper css*/
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      padding: 15px;
+      gap: 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hello {
+      background: #642e2e !important;
+      border: 2px solid blue;
+    }
+
+    .fa-circle {
+      padding-left: 50px;
+      font-size: 0.6rem;
+    }
+
+    .part3 img {
+      width: 50px;
+      height: 50px;
+      padding: 0 100px;
+
+    }
+
+    .part3 a {
+      color: #0067b8;
+      display: flex;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      justify-content: center;
+    }
+
+    .part3 {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .laptop {
+      padding: 0px;
+      width: 60%;
+    }
+
+    .section-3 {
+      padding: 80px 0;
+      display: flex;
+      justify-content: center;
+      gap: -1.5rem;
+      padding-left: 50px;
+    }
+
+    .laptop img {
+      width: 90%;
+
+
+      display: flex;
+      justify-content: center;
+
+      padding-left: 20px;
+    }
+
+    .laptop h1 span {
+
+      font-size: 2rem;
+    }
+
+    .laptop h1 {
+      padding-top: 20px;
+    }
+
+    .laptop p {
+      font-size: 1.2rem;
+      display: flex;
+      gap: 0.5rem;
+      padding-bottom: 20px;
+      padding: 10px;
+    }
+
+    .laptop a {
+      display: flex;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: #0067b8;
+      font-size: 1.2rem;
+    }
+
+    .contant-4 img {
+      width: 82%;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      overflow: hidden;
+      padding: 0 130px;
+      cursor: pointer;
+
+    }
+
+    .left-1 {
+      display: flex;
+      position: absolute;
+      top: 200%;
+      left: 15%;
+      font-size: 1.6rem;
+    }
+
+    .contant-4 p {
+      width: 25%;
+      position: absolute;
+      top: 215%;
+      font-size: 1.1rem;
+      left: 15%;
+
+    }
+
+    .contant-4 p button {
+      margin: 30px;
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #0067b8;
+      color: #fff;
+      border: 1px solid transparent;
+      border-radius: 3px;
+    }
+
+    .contant-4 p button:hover {
+      background: rgb(19, 88, 216);
+      cursor: pointer;
+    }
+
+    .headding-5{
+     
+      padding-left:80px;
+      margin: 50px;
+    }
+    .headding-5 h1 span{
+      font-family: inherit;
+      font-size: 2.3125rem;
+    }
+
+    .businees img{
+      width: 100%;
+    }
+
+    .businees{
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding:0 30px;
+      text-align: center;
+      align-items: center;
+      
+    }
+    .businees p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 50%;
+      width: 80%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section class="section1">
+    <nav class="navbar1">
+      <div class="container1">
+        <ul>
+          <img src="micro.png" alt="1">
+          <li><a href="#">Microsoft365</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Windows</a></li>
+          <li><a href="#">Surface</a></li>
+          <li><a href="#">Xbox</a></li>
+          <li><a href="#">Support</a></li>
+
+
+
+
+
+
+
+          <div class="right">
+            <ul>
+              <a href="#">All Micrsoft</a>
+              <a href="#">Search</a><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              <a class="ee2" href="#">Cart</a><i class="fa-sharp fa-solid fa-cart-shopping"></i>
+              <a class="ee3" href="#">Sign In</a><i class="fa-solid fa-user-large"></i>
+            </ul>
+          </div>
+
+        </ul>
+
+      </div>
+
+    </nav>
+  </section>
+
+
+  <section>
+    <div class="section2">
+      <div class="img-left mySwiper">
+        <img src="images-removebg-preview (1).png" alt="">
+        <div class="right1">
+          <h1><span>Surface Pro 9</span></h1>
+          <p>Tablet versatility and laptop power — all in one ultra-portable <br>device</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide ">
+        <i class="fa-regular fa-circle-pause"></i>
+        <i class="fa-solid fa-chevron-left"><i class="fa-sharp fa-regular fa-circle"></i><i
+            class="fa-sharp fa-regular fa-circle"></i></i>
+        <i class="fa-solid fa-chevron-right"></i>
+
+
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <section>
+    <div class="part3">
+      <div class="images-1">
+        <img src="images.png" alt=""><br>
+        <a href="#">Choose your Microsoft 365</a>
+
+      </div>
+      <div class="images-2">
+        <img src="bag.webp" alt=""><br>
+        <a href="#">Explore Surface devices</a>
+      </div>
+      <div class="images-3">
+        <img src="ball.webp" alt=""><br>
+        <a href="#">Buy Xbox games and consoles</a>
+      </div>
+      <div class="images-4">
+        <img src="images.png" alt=""><br>
+        <a href="#">Get Windows 11</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-3">
+      <div class="laptop">
+        <img src="laptop.webp" alt=""><br>
+        <h1><span>Surface Laptop Studio</span></h1>
+        <p>Flex your creative muscle on the most powerful Surface Laptop. Now available with Windows 11.</p>
+        <a href="#">Learn more<i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+      <div class="laptop">
+
+        <img src="surface.webp" alt="">
+        <h1><span>Microsoft 365</span></h1>
+        <p>Turn your ideas into reality, stay safer online and off, and focus on what matters most with <br> Microsoft
+          365 apps.</p>
+        <a href="#">For one persion<i class="fa-solid fa-chevron-right"></i></a><br>
+        <a href="#">For one persion<i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+      <div class="laptop">
+        <img src="sound.webp" alt=""><br>
+        <h1><span>Xbox Series X</span></h1>
+        <p>The fastest, most powerful Xbox ever.</p>
+        <a href="#">Shop Xbox Series X<i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+      <div class="laptop">
+        <img src="ludo.webp" alt=""><br>
+        <h1><span>Surface Laptop Studio</span></h1>
+        <p><span>Next-gen performance in the smallest Xbox ever.</span></p>
+        <a href="#">Shop Xbox Series S<i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="contant-4">
+      <div class="img-1">
+
+        <img src="contant-3.avif" alt="">
+      </div>
+      <div class="left-1">
+        <h1><span>Announcing the next <br> wave of AI innovation</span></h1>
+      </div>
+      <p>The new Microsoft Bing and Edge will soon feature more visual search responses, chat history, and persistent
+        chat within Edge. We’re also adding actions to help people complete tasks.
+        <br>
+        <button>Learn more about it</button>
+      </p>
+
+
+    </div>
+
+  </section>
+
+
+  <header>
+    <div class="headding-5">
+      <h1><span>For business</span></h1>
+    </div>
+    <div class="businees">
+      
+      <div class="contant-3">
+        <img src="laptop-4.avif" alt="">
+        <h1 class="span">Surface for Business</h1>
+        <p>No matter what you do, there’s a Surface to help you do it.</p>
+        <a href="#">Shop now <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <!--  2  -->
+
+      <div class="contant-3">
+        <img src="laptop-4.avif" alt="">
+        <h1 class="span">Surface for Business</h1>
+        <p>No matter what you do, there’s a Surface to help you do it.</p>
+        <a href="#">Shop now <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+
+      <!--  3  -->
+
+
+
+      
+      <div class="contant-3">
+        <img src="laptop-4.avif" alt="">
+        <h1 class="span">Surface for Business</h1>
+        <p>No matter what you do, there’s a Surface to help you do it.</p>
+        <a href="#">Shop now <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+
+      <div class="contant-3">
+        <img src="laptop-4.avif" alt="">
+        <h1 class="span">Surface for Business</h1>
+        <p>No matter what you do, there’s a Surface to help you do it.</p>
+        <a href="#">Shop now <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>
